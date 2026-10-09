@@ -1,0 +1,17 @@
+@use "../abstracts/variables" as *;
+
+
+header {
+    background-color: $dark-color;
+    color: $white-color;
+    text-align: center;
+    padding: $spacing-md;
+
+    h1 {
+        margin: 0;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+}

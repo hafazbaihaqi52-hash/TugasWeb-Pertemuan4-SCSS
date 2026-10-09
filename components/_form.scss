@@ -1,0 +1,33 @@
+@use "../abstracts/variables" as *;
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-sm;
+
+    label {
+        font-weight: bold;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: $spacing-sm;
+        border: 1px solid $text-muted;
+        border-radius: $border-radius;
+    }
+
+    button {
+        padding: $spacing-sm;
+        background-color: $primary-color;
+        color: $white-color;
+        border: none;
+        border-radius: $border-radius;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+}

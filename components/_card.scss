@@ -1,0 +1,52 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+
+article,
+section {
+    @include card-style;
+
+    h2 {
+        color: $primary-color;
+    }
+}
+
+
+figure {
+    margin: $spacing-md 0;
+    text-align: center;
+
+    img {
+        max-width: 200px;
+        width: 100%;
+        height: auto;
+        border-radius: $border-radius;
+    }
+
+    figcaption {
+        color: $text-muted;
+        margin-top: $spacing-xs;
+    }
+}
+
+
+#hobi {
+    li {
+        margin-bottom: $spacing-xs;
+    }
+}
+
+$judul-warna: (
+    utama: $primary-color,
+    gelap: $dark-color,
+    muted: $text-muted
+);
+
+
+@each $nama, $warna in $judul-warna {
+
+    .text-#{$nama} {
+        color: $warna;
+    }
+
+}

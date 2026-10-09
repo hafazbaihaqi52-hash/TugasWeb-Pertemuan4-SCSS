@@ -1,0 +1,22 @@
+@use "../abstracts/variables" as *;
+
+
+@media (prefers-color-scheme: dark) {
+
+    body {
+        background-color: #0f172a;
+        color: #f8fafc;
+    }
+
+    article,
+    section,
+    aside {
+        background-color: #1e293b;
+    }
+
+    header,
+    footer {
+        background-color: #020617;
+    }
+
+}

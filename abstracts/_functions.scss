@@ -1,0 +1,6 @@
+@use "variables" as *;
+
+
+@function spacing($multiplier) {
+    @return $spacing-xs * $multiplier;
+}

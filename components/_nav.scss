@@ -1,0 +1,21 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: $spacing-sm;
+    padding: $spacing-sm;
+    background-color: $primary-color;
+
+    a {
+        color: $white-color;
+        text-decoration: none;
+        font-weight: bold;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

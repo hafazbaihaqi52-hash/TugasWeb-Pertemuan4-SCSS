@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f5f9;
+  color: #1e293b;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
+header {
+  background-color: #1e293b;
+  color: #ffffff;
+  text-align: center;
+  padding: 24px;
+}
+header h1 {
+  margin: 0;
+}
+header p {
+  margin-bottom: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px;
+  background-color: #2563eb;
+}
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+article,
+section {
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 10px;
+}
+article h2,
+section h2 {
+  color: #2563eb;
+}
+
+figure {
+  margin: 24px 0;
+  text-align: center;
+}
+figure img {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+figure figcaption {
+  color: #64748b;
+  margin-top: 8px;
+}
+
+#hobi li {
+  margin-bottom: 8px;
+}
+
+.text-utama {
+  color: #2563eb;
+}
+
+.text-gelap {
+  color: #1e293b;
+}
+
+.text-muted {
+  color: #64748b;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+form label {
+  font-weight: bold;
+}
+form input,
+form textarea {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #64748b;
+  border-radius: 10px;
+}
+form button {
+  padding: 16px;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+form button:hover {
+  opacity: 0.9;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+aside {
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 10px;
+}
+aside h2 {
+  color: #2563eb;
+}
+
+footer {
+  background-color: #1e293b;
+  color: #ffffff;
+  text-align: center;
+  padding: 24px;
+}
+
+main {
+  min-height: 500px;
+}
+
+#tentang,
+#pendidikan,
+#hobi,
+#kontak {
+  margin-bottom: 24px;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #0f172a;
+    color: #f8fafc;
+  }
+  article,
+  section,
+  aside {
+    background-color: #1e293b;
+  }
+  header,
+  footer {
+    background-color: #020617;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

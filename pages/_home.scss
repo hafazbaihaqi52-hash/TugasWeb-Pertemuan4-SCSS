@@ -1,0 +1,14 @@
+@use "../abstracts/variables" as *;
+
+
+main {
+    min-height: 500px;
+}
+
+
+#tentang,
+#pendidikan,
+#hobi,
+#kontak {
+    margin-bottom: $spacing-md;
+}
